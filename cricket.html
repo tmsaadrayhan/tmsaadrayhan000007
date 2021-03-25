@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket</title>
+    <style>
+        .ball{
+            height: 20px;
+            width: 20px;
+            background-color: red;
+            border-radius: 50%;
+            margin: -280px 0px 0px 400px;
+            position: relative;
+            transition: transform 1s ease-in-out 0.2s;
+
+        }
+        .bat{
+            height: 200px;
+            width: 200px;
+            margin: 200px 0px 0px 200px;
+            transition: transform 0.2s ease-in-out;
+        }
+        .bat:hover{
+            transform: rotate(-60deg);
+            transform-origin: 0% 0%;
+        }
+        .field:hover .ball{
+            transform:translate(-100px, -1000px);
+        }
+    </style>
+</head>
+<body>
+    <div class="field">
+        <img class="bat" src="Image/898-8984595_cricket-bat-baber-999-side-view-atx-adaptateur.png">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
